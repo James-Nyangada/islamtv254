@@ -38,11 +38,11 @@ const HeaderOne = ({ style, style_2 }: any) => {
                   <div className="logo">
                      <Link href="/"><Image src={style ? logo_2 : logo_1} alt="img" /></Link>
                   </div>
-                  <div className="nav-right-part nav-right-part-mobile">
+                  {/* <div className="nav-right-part nav-right-part-mobile">
                      <Link className="signin-btn" href="/signin">Sign In</Link>
                      <Link className="ed-btn btn-base" href="/signup">Sign Up</Link>
                      <a onClick={() => setIsSearch(true)} style={{ cursor: "pointer" }} className="search-bar"><i className="fa fa-search"></i></a>
-                  </div>
+                  </div> */}
                   <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="edumint_main_menu">
                      <ul className="navbar-nav menu-open">
                         <NavMenu />

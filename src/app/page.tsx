@@ -2,7 +2,7 @@ import HomeOne from "@/components/homes/home-one";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-  title: "Edumint - Edumint LMS & Online Courses React Next js Template",
+  title: "Islamtv254-your number 1 website to enrich your muslim background",
 };
 const page = () => {
   return (
