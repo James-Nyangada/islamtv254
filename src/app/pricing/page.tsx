@@ -2,7 +2,7 @@ import Pricing from "@/components/inner-pages/pricing";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Pricing Edumint - Edumint LMS & Online Courses React Next js Template",
+   title: "Pricing Islamtv-254 - Islamtv-254 LMS & Online Courses React Next js Template",
 };
 const page = () => {
    return (

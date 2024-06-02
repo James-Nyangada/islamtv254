@@ -2,7 +2,7 @@ import HomeThree from "@/components/homes/home-three";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Home Three Edumint - Edumint LMS & Online Courses React Next js Template",
+   title: "Home Three Islamtv-254 - Islamtv-254 LMS & Online Courses React Next js Template",
 };
 const page = () => {
    return (

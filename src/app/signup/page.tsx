@@ -2,7 +2,7 @@ import Singup from "@/components/inner-pages/signup";
 import Wrapper from "@/layouts/Wrapper";
 
 export const metadata = {
-   title: "Singup Edumint - Edumint LMS & Online Courses React Next js Template",
+   title: "Singup Islamtv-254 - Islamtv-254 LMS & Online Courses React Next js Template",
 };
 const page = () => {
    return (

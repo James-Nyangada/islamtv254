@@ -15,7 +15,7 @@ const FooterTwo = () => {
                      <div className="widget widget_about text-center">
                         <Link href="/"><Image src={footerLogo} alt="img" /></Link>
                         <div className="details">
-                           <p>Edumint tetur sadipscing elitr tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                           <p>Islamtv-254 tetur sadipscing elitr tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
                            <ul className="social-media">
                               <li><Link href="#"><i className="fa fa-facebook"></i></Link></li>
                               <li><Link href="#"><i className="fa fa-twitter"></i></Link></li>
@@ -66,7 +66,7 @@ const FooterTwo = () => {
             <div className="container">
                <div className="row">
                   <div className="col-md-5 align-self-center">
-                     <p>Copyright 2024 by edumint.com</p>
+                     <p>Copyright 2024 by Islamtv-254.com</p>
                   </div>
                   <div className="col-md-7 text-md-right align-self-center mt-md-0 mt-2">
                      <div className="widget_nav_menu">

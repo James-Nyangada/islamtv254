@@ -29,7 +29,7 @@ const HeaderOne = ({ style, style_2 }: any) => {
                   <div className="responsive-mobile-menu">
                      <button
                         onClick={toggleMobileMenu}
-                        className={`menu toggle-btn d-block d-lg-none ${isActive ? "open" : ""}`} data-target="#edumint_main_menu"
+                        className={`menu toggle-btn d-block d-lg-none ${isActive ? "open" : ""}`} data-target="#Islamtv-254_main_menu"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span className="icon-left"></span>
                         <span className="icon-right"></span>
@@ -43,7 +43,7 @@ const HeaderOne = ({ style, style_2 }: any) => {
                      <Link className="ed-btn btn-base" href="/signup">Sign Up</Link>
                      <a onClick={() => setIsSearch(true)} style={{ cursor: "pointer" }} className="search-bar"><i className="fa fa-search"></i></a>
                   </div> */}
-                  <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="edumint_main_menu">
+                  <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="Islamtv-254_main_menu">
                      <ul className="navbar-nav menu-open">
                         <NavMenu />
                      </ul>
