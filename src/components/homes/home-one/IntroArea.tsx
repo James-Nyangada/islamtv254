@@ -10,11 +10,11 @@ const IntroArea = () => {
                <div className="row no-gutters">
                   <div className="col-lg-4 text-lg-left text-center">
                      <div className="intro-title">
-                        <h3>Vivamus maximus </h3>
-                        <p>Lorem ipsum dolor sadipscing elitr, sed diam nonum</p>
+                        <h3>Why Choose Islam254 </h3>
+                        <p>We are the best online platform to enrich your islamic knowledge</p>
                         <ul>
-                           <li><i className="fa fa-check"></i> Nullam est </li>
-                           <li><i className="fa fa-check"></i> Mattis dictum nunc  </li>
+                           <li><i className="fa fa-check"></i> Tried and tested </li>
+                           <li><i className="fa fa-check"></i> Best Islamic Scholars</li>
                         </ul>
                      </div>
                   </div>

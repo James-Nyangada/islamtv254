@@ -28,22 +28,22 @@ const intro_data: DataType[] = [
       id: 1,
       page:"home_1",
       icon: icon_1,
-      title: "Postgraduate",
-      desc: "Lorem ipsum dolor"
+      title: "Weekly Lessons Update",
+     /*  desc: "Lorem ipsum dolor" */
    },
    {
       id: 2,
       page:"home_1",
       icon: icon_2,
-      title: "Engineering",
-      desc: "Lorem ipsum dolor"
+      title: "24HR Customer support",
+      /* desc: "Lorem ipsum dolor" */
    },
    {
       id: 3,
       page:"home_1",
       icon: icon_3,
-      title: "Accounting",
-      desc: "Lorem ipsum dolor"
+      title: "Best Islamic Scholars",
+      /* desc: "Lorem ipsum dolor" */
    },
 
    // home_2

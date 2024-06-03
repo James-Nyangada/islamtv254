@@ -16,20 +16,20 @@ const counter_data: DataType[] = [
    {
       id: 1,
       icon: icon_1,
-      count: 1200,
+      count: 200,
       title: "Learners & counting",
    },
    {
       id: 2,
       icon: icon_2,
-      count: 320,
+      count: 12,
       title: "Total courses",
    },
    {
       id: 3,
       icon: icon_3,
-      count: 1340,
-      title: "Successful students",
+      count: 348,
+      title: "Successful students taught",
    },
 ]
 
@@ -43,9 +43,9 @@ const Counter = () => {
                      <div className="section-title mb-0">
                         <h6 className="sub-title right-line">Funfact</h6>
                         <h2 className="title">Strength in Numbers</h2>
-                        <p className="content pb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy</p>
+                        <p className="content pb-3">IslamTV-254 has taught over 300 students, Raised donations for the needy, Constructed Mosques in local areas, Dug wells, boreholes,   Robbing Scholarships to international Universties eg Turkey ||Austrial || Mecca||Madina</p>
                         <div className="btn-counter bg-base mt-4">
-                           <h3 className="left-val align-self-center"><span className="counter"><Count number={2.4} /></span>k+</h3>
+                           <h3 className="left-val align-self-center"><span className="counter"><Count number={348} /></span>k+</h3>
                            <div className="right-val align-self-center">
                               Successful <br /> students
                            </div>

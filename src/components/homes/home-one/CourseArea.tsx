@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import course_data from "@/data/CourseData";
 
-const tab_title: string[] = ["Graphics & Design", "Digital Marketing", "Music & Audio", "Writing & Translation",];
+const tab_title: string[] = ["TAWHEED(ONENESS OF ALLAH)", "HADITH(SAYINGS OF THE PROPHET)", "FIQHJURISPRUDENCE(ISLAMIC LAW)", "ARABIC LANGUAGE(NON-ARABIC SPEAKERS)", "SIRA(BIOGRAPHY OF THE PROPHET)", "TARIKH(HISTORY OF ISLAM)", "NAHAU(ARABIC GRAMMAR)"];
 
 const CourseArea = () => {
 
@@ -61,11 +61,11 @@ const CourseArea = () => {
                                              <span>({item.total_rating})</span>
                                           </div>
                                        </div>
-                                       <div className="col-6">
+                                       {/* <div className="col-6">
                                           <div className="price text-right">
                                              Price: <span>${item.price}.00</span>
                                           </div>
-                                       </div>
+                                       </div> */}
                                     </div>
                                  </div>
                               </div>
