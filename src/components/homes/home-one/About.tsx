@@ -12,7 +12,7 @@ const About = () => {
                      <div className="about-thumb-wrap left-icon" style={{ backgroundImage: `url(/assets/img/banner/2.png)` }}>
                         <div className="about-icon"><Image src={bannerThumb} alt="img" /></div>
                         <div className="bottom-content">
-                           Let's share the knowledge
+                           Let&apos;s share the knowledge
                         </div>
                      </div>
                   </div>
