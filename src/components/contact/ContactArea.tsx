@@ -16,19 +16,19 @@ const contact_list: DataType[] = [
       id: 1,
       icon: icon_1,
       title: "Our Phone",
-      desc: "000 2324 39493",
+      desc: "+254 791 278 751",
    },
    {
       id: 2,
       icon: icon_2,
       title: "Our Email",
-      desc: "name@website.com",
+      desc: "noordeena49@gmail.com",
    },
    {
       id: 3,
       icon: icon_3,
       title: "Our Address",
-      desc: "2 St, Loskia, amukara.",
+      desc: "South B || Masjid Alhuda",
    },
 ]
 const ContactArea = () => {

@@ -18,25 +18,25 @@ const work_data: DataType[] = [
       id: 1,
       icon: icon_1,
       title: "Sign up",
-      desc: "Ipsum yorem dolor amet sit elit. Duis at est id leosco for it",
+      desc: "Create an Acoount",
    },
    {
       id: 2,
       icon: icon_2,
       title: "Select course",
-      desc: "Ipsum yorem dolor amet sit elit. Duis at est id leosco for it",
+      desc: "Choose from among the various courses",
    },
    {
       id: 3,
       icon: icon_3,
       title: "Start Learning",
-      desc: "Ipsum yorem dolor amet sit elit. Duis at est id leosco for it",
+      desc: "Through videos and Pdf's",
    },
    {
       id: 4,
       icon: icon_4,
       title: "Get Certificate",
-      desc: "Ipsum yorem dolor amet sit elit. Duis at est id leosco for it",
+      desc: "Download Certificate after succesfull completion of a course",
    },
 ]
 
@@ -51,7 +51,7 @@ const WorkArea = () => {
                      <h2 className="title">How it works?</h2>
                   </div>
                   <div className="col-lg-6 align-self-center">
-                     <p className="content mt-lg-0">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs when MTV ax quiz</p>
+                     <p className="content mt-lg-0">A detailed summary of how to enroll for a course</p>
                   </div>
                </div>
             </div>
@@ -66,7 +66,7 @@ const WorkArea = () => {
                         <div className="details">
                            <h5>{item.title}</h5>
                            <p>{item.desc}</p>
-                           <Link className="read-more-text" href="/blog-details">Read More <i className="fa fa-angle-right"></i></Link>
+                           {/* <Link className="read-more-text" href="/blog-details">Read More <i className="fa fa-angle-right"></i></Link> */}
                         </div>
                      </div>
                   </div>

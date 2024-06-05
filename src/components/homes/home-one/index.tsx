@@ -21,8 +21,8 @@ const HomeOne = () => {
       <CourseArea />
       <Counter />
       <WorkArea />
-      <Testimonial />
-      <Team />
+      {/* <Testimonial /> */}
+      {/* <Team /> */}
       <Blog />
       <Contact />
       <FooterOne />

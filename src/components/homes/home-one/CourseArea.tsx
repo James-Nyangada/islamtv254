@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import course_data from "@/data/CourseData";
 
-const tab_title: string[] = ["TAWHEED(ONENESS OF ALLAH)", "HADITH(SAYINGS OF THE PROPHET)", "FIQHJURISPRUDENCE(ISLAMIC LAW)", "ARABIC LANGUAGE(NON-ARABIC SPEAKERS)", "SIRA(BIOGRAPHY OF THE PROPHET)", "TARIKH(HISTORY OF ISLAM)", "NAHAU(ARABIC GRAMMAR)"];
+const tab_title: string[] = ["TAWHEED(ONENESS OF ALLAH)", "HADITH(SAYINGS OF THE PROPHET)", "FIQHJURISPRUDENCE(ISLAMIC LAW)", "ARABIC LANGUAGE(NON-ARABIC SPEAKERS)", "SIRA(BIOGRAPHY OF THE PROPHET)", "TARIKH(HISTORY OF ISLAM)", "Quran", 'Tafsir Quran'];
 
 const CourseArea = () => {
 

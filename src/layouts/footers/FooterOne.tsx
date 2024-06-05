@@ -108,7 +108,7 @@ const FooterOne = () => {
                      </ul>
                   </div>
                   <div className="col-lg-4 order-lg-8 text-lg-center align-self-center mt-lg-0 mt-3">
-                     <p>copyright 2024 by Islamtv-254.com</p>
+                     <p>copyright 2024 by Islamtv-254.online</p>
                   </div>
                </div>
             </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ContactForm from "../forms/ContactForm";
 
-const icons: string[] = ["fa fa-facebook", "fa fa-twitter", "fa fa-instagram", "fa fa-pinterest", "fa fa-linkedin",];
+const icons: string[] = ["fa fa-facebook", "fa fa-youtube", "fa fa-instagram", "fa fa-pinterest", "fa fa-linkedin",];
 
 const ContactFormArea = () => {
    return (
@@ -11,9 +11,9 @@ const ContactFormArea = () => {
                <div className="col-lg-4">
                   <div className="section-title mb-0">
                      <h6 className="sub-title right-line">Get in touch</h6>
-                     <h2 className="title">Write Us a Message</h2>
-                     <p className="content pb-3">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax
-                        quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, </p>
+                     <h2 className="title">Qoute</h2>
+                     <p className="content pb-3">وقوله سبحانه: قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ وَالَّذِينَ لا يَعْلَمُونَ. أي: هل يستوي هذا والذي قبله ممن جعل لله أنداداً ليضل عن سبيله. وقوله: إِنَّمَا يَتَذَكَّرُ أُولُو الْأَلْبَابِ. أي: إنما يعلم الفرق بين هذا، وهذا من له لب وهو
+                     And the Almighty said: Say, “Are those who know and those who do not know equal?”  That is: Is this equal to those before him, those who set up rivals to God to stray from His path?  And he said: Only those of understanding remember.  That is: He only knows the difference between this one and this one who has a core and this one</p>
                      <ul className="social-media style-base pt-3">
                         {icons.map((icon, i) => (
                            <li key={i}>

@@ -8,7 +8,7 @@ const HeaderTopOne = () => {
                <div className="col-md-8 text-md-left text-center">
                   <ul>
                      <li><p><i className="fa fa-map-marker"></i> Nairobi Kenya</p></li>
-                     <li><p><i className="fa fa-envelope-o"></i>  noordeen49@gmail.com</p></li>
+                     <li><p><i className="fa fa-envelope-o"></i>  noordeena49@gmail.com</p></li>
                   </ul>
                </div>
                <div className="col-md-4">

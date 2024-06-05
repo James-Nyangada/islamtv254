@@ -17,22 +17,22 @@ const contact_data: DataType[] = [
       id: 1,
       icon: icon_1,
       title: "Our Address",
-      address: (<><p>PSD Building, 2 AlBahr</p>
-         <p>St, Loskia sripur</p></>),
+      address: (<><p>Nairobi, Kenya</p>
+         <p>South B || Masjid Alhuda</p></>),
    },
    {
       id: 2,
       icon: icon_2,
       title: "Our Phone",
-      address: (<><p>+0029129102320</p>
-         <p>+000 2324 39493</p></>),
+      address: (<><p>+254 791 278 751</p>
+         <p>+256 772 437 053</p></>),
    },
    {
       id: 3,
       icon: icon_3,
       title: "Our Email",
-      address: (<> <p>name@website.com</p>
-         <p>Info@orex.com</p></>),
+      address: (<> <p>noordeena49@gmail.com</p>
+         </>),
    },
 ]
 
