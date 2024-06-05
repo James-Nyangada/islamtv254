@@ -9,7 +9,7 @@ const About = () => {
             <div className="about-area-inner">
                <div className="row">
                   <div className="col-lg-6">
-                     <div className="about-thumb-wrap left-icon" style={{ backgroundImage: `url(/assets/img/banner/2.png)` }}>
+                     <div className="about-thumb-wrap left-icon" style={{ backgroundImage: `url(/assets/img/banner/banner.jpg)` }}>
                         <div className="about-icon"><Image src={bannerThumb} alt="img" /></div>
                         <div className="bottom-content">
                            Let&apos;s share the knowledge

@@ -1,13 +1,13 @@
 import { StaticImageData } from "next/image";
 
-import courseThumb_1 from "@/assets/img/course/1.png";
-import courseThumb_2 from "@/assets/img/course/2.png";
-import courseThumb_3 from "@/assets/img/course/3.png";
-import courseThumb_4 from "@/assets/img/course/4.png";
-import courseThumb_5 from "@/assets/img/course/5.png";
-import courseThumb_6 from "@/assets/img/course/6.png";
-import courseThumb_7 from "@/assets/img/course/7.png";
-import courseThumb_8 from "@/assets/img/course/8.png";
+import courseThumb_1 from "@/assets/img/course/course-1.jpg";
+import courseThumb_2 from "@/assets/img/course/course-2.jpg";
+import courseThumb_3 from "@/assets/img/course/course-3.jpg";
+import courseThumb_4 from "@/assets/img/course/course-4.jpg";
+import courseThumb_5 from "@/assets/img/course/course-5.jpg";
+import courseThumb_6 from "@/assets/img/course/course-6.jpg";
+import courseThumb_7 from "@/assets/img/course/course-7.jpg";
+import courseThumb_8 from "@/assets/img/course/course-8.jpg";
 
 import userThumb_1 from "@/assets/img/author/1.png";
 import userThumb_2 from "@/assets/img/author/2.png";
