@@ -8,7 +8,9 @@ const BlogDetails = () => {
       <>
          <HeaderOne style_2={true} />
          <Breadcrumb title="Blog Details" sub_title="Blog Details" />
-         <BlogDetailsArea />
+         <BlogDetailsArea params={{
+            slug: ""
+         }} />
          <FooterOne />
       </>
    )

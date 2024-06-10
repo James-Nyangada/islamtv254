@@ -7,6 +7,9 @@ import BlogSidebar from "../common-blog/BlogSidebar";
 
 import blogDetailsThumb_1 from "@/assets/img/blog/4.png";
 import blogDetailsThumb_2 from "@/assets/img/blog/single.png";
+import { client, urlFor } from "@/app/lib/sanity";
+import { blogDetails } from "@/app/lib/interface";
+import { PortableText } from "next-sanity";
 
 interface ContentType {
    title_1: string;
@@ -32,8 +35,30 @@ const content_data: ContentType = {
 
 const { title_1, title_2, desc_1, desc_2, desc_3, blockquote, list, icon } = content_data;
 
+async function getData(slug: string){
+   const query = `
+   *[_type == "blog" && slug.current == '${slug}']{
+      "currentSlug": slug.current,
+      title,
+      content,
+      mainImage
+   }[0]`;
 
-const BlogDetailsArea = () => {
+   console.log("Sanity Query:", query);
+
+   const data = await client.fetch(query);
+   console.log("Fetched Data:", data);
+   return data;
+}
+
+export default async function BlogDetailsArea({params}: {params: {slug: string}}) {
+   console.log("Params:", params); // Add this line to check the params object
+   const data: blogDetails | null = await getData(params.slug)
+
+   if (!data) {
+      return <div>Blog not found</div>
+   }
+
    return (
       <div className="blog-area pd-top-120 pd-bottom-120">
          <div className="container">
@@ -42,15 +67,19 @@ const BlogDetailsArea = () => {
                   <div className="blog-details-page-content">
                      <div className="single-blog-inner">
                         <div className="thumb">
-                           <Image src={blogDetailsThumb_1} alt="img" />
+                           {data.mainImage ? (
+                              <Image src={urlFor(data.mainImage).url()} alt={data.title} width={770} height={450} />
+                           ) : (
+                              <div>No image available</div>
+                           )}
                         </div>
                         <div className="details">
                            <ul className="blog-meta">
                               <li><i className="fa fa-user"></i> BY ADMIN</li>
                               <li><i className="fa fa-calendar-check-o"></i> 28 JANUARY, 2020</li>
                            </ul>
-                           <h3 className="title">{title_1}</h3>
-                           <p>{desc_1}</p>
+                           <h3 className="title">{data.title}</h3>
+                           <PortableText value={data.content}/>
                            <blockquote>
                               {blockquote}
                               <h6 className="mb-0 mt-2">Marilyn Gilbert</h6>
@@ -105,5 +134,3 @@ const BlogDetailsArea = () => {
       </div>
    )
 }
-
-export default BlogDetailsArea

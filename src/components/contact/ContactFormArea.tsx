@@ -1,7 +1,7 @@
 import Link from "next/link";
 import ContactForm from "../forms/ContactForm";
 
-const icons: string[] = ["fa fa-facebook", "fa fa-youtube", "fa fa-instagram", "fa fa-pinterest", "fa fa-linkedin",];
+const icons: string[] = ["fa fa-facebook", "fa fa-youtube",];
 
 const ContactFormArea = () => {
    return (
