@@ -10,6 +10,8 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate =  10 //resreshes after every 10 seconds
+
 interface ContentType {
     title_1: string;
     desc_1: JSX.Element;
