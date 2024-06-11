@@ -2,10 +2,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import ReactPaginate from "react-paginate";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import UseProducts from "@/hooks/UseProducts";
 import { useSelector } from "react-redux";
 import { selectProducts } from "@/redux/features/productSlice";
+import { client, urlFor } from "@/app/lib/sanity";
+import { courseInfo } from "@/app/lib/interface";
+
+async function getData(){
+   const query = `
+   *[_type == 'course'] | order(_createdAt desc){
+  title,
+    "currentSlug": slug.current,
+    userName,
+    thumbnail,
+}`;
+
+   const data = await client.fetch(query)
+   return data;
+
+}
 
 const CourseArea = () => {
 
@@ -14,12 +30,24 @@ const CourseArea = () => {
    const [levelSelected, setLevelSelected] = useState('All Level');
    const [tagSelet, setTagSelet] = useState<string | undefined>();
 
+   const [data, setData] = useState<courseInfo[]>([])
+
+     // Fetch data when the component mounts
+  useEffect(() => {
+   async function fetchData() {
+     const courseData = await getData();
+     setData(courseData);
+   }
+   fetchData();
+ }, [])
+
    const { products, setProducts } = UseProducts();
    const filteredProducts = products;
 
    const itemsPerPage = 6;
    const [itemOffset, setItemOffset] = useState(0);
    const endOffset = itemOffset + itemsPerPage;
+   const currentCourse = data.slice(itemOffset, endOffset);
    const currentItems = filteredProducts.slice(itemOffset, endOffset);
    const pageCount = Math.ceil(filteredProducts.length / itemsPerPage);
 
@@ -93,31 +121,31 @@ const CourseArea = () => {
             <div className="row">
                <div className="col-lg-8 order-lg-12">
                   <div className="row">
-                     {currentItems.map((item) => (
-                        <div key={item.id} className="col-md-6">
+                     {currentCourse.map((item,idx) => (
+                        <div key={idx} className="col-md-6">
                            <div className="single-course-inner">
                               <div className="thumb">
-                                 <Image src={item.thumb} alt="img" />
+                              <Image src={urlFor(item.thumbnail).url()} alt={item.title} width={370} height={200}/>
                               </div>
                               <div className="details">
                                  <div className="details-inner">
                                     <div className="emt-user">
-                                       <span className="u-thumb"><Image src={item.user_thumb} alt="img" /></span>
-                                       <span className="align-self-center">{item.user_name}</span>
+                                       {/* <span className="u-thumb"><Image src={item.user_thumb} alt="img" /></span> */}
+                                       <span className="align-self-center">{item.userName}</span>
                                     </div>
-                                    <h6><Link href="/course-details">{item.title}</Link></h6>
+                                    <h6><Link href={`/course/${item.currentSlug}`}>{item.title}</Link></h6>
                                  </div>
                                  <div className="emt-course-meta">
                                     <div className="row">
                                        <div className="col-6">
                                           <div className="rating">
-                                             <i className="fa fa-star"></i> {item.rating}
-                                             <span>({item.total_rating})</span>
+                                             {/* <i className="fa fa-star"></i> {item.rating}
+                                             <span>({item.total_rating})</span> */}
                                           </div>
                                        </div>
                                        <div className="col-lg-6">
                                           <div className="price text-right">
-                                             Price: <span>${item.price}.00</span>
+                                             Price: {/* <span>${item.price}.00</span> */}
                                           </div>
                                        </div>
                                     </div>

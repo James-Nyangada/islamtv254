@@ -11,3 +11,18 @@ export interface blogDetails{
     content: any;
     mainImage: any;
 }
+
+export interface courseInfo{
+    title: string;
+    currentSlug: string;
+    userName: string;
+    thumbnail: any;
+}
+
+export interface courseDetailInfo{
+    title: string;
+    currentSlug: string;
+    userName: string;
+    thumbnail: any;
+    description: any;
+}
