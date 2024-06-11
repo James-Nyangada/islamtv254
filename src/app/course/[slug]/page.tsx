@@ -42,7 +42,7 @@ export default async function CourseDetails ({params}: {params: {slug: string}})
                      <div className="details-inner">
                         <div className="emt-user">
                            <span className="u-thumb"><Image src={author} alt="img" /></span>
-                           <span className="align-self-center">Nancy Reyes</span>
+                           <span className="align-self-center">{data.userName}</span>
                         </div>
                         <h3 className="title">{data.title}</h3>
                      </div>
