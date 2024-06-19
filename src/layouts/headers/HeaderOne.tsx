@@ -36,7 +36,7 @@ const HeaderOne = ({ style, style_2 }: any) => {
                      </button>
                   </div>
                   <div className="logo">
-                     <Link href="/"><Image src={style ? logo_2 : logo_1} alt="img" /></Link>
+                     <Link href="/"><Image src={style ? logo_2 : logo_1} alt="img" width={150} height={65}/></Link>
                   </div>
                   {/* <div className="nav-right-part nav-right-part-mobile">
                      <Link className="signin-btn" href="/signin">Sign In</Link>
