@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-async-client-component */
 "use client"
 import { blogDetails } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
@@ -10,7 +11,7 @@ import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 
-export const revalidate =  10 //resreshes after every 10 seconds
+ //resreshes after every 10 seconds
 
 interface ContentType {
     title_1: string;
