@@ -83,22 +83,22 @@ export default async function BlogArticle ({params}: {params: {slug: string}}){
                            <h3 className="title">{data.title}</h3>
                            <PortableText value={data.content}/>
                            <blockquote>
-                              {blockquote}
-                              <h6 className="mb-0 mt-2">Marilyn Gilbert</h6>
+                              {/* {blockquote}
+                              <h6 className="mb-0 mt-2">Marilyn Gilbert</h6> */}
                            </blockquote>
                            <p>{desc_2}</p>
                            <div className="thumb mb-4">
                            <Image src={urlFor(data.mainImage).url()} alt={data.title} width={770} height={450} />
                            </div>
-                           <h5>{title_2}</h5>
-                           <p>{desc_3}</p>
-                           <ul className="single-list-wrap">
+                           {/* <h5>{title_2}</h5>
+                           <p>{desc_3}</p> */}
+                         {/*   <ul className="single-list-wrap">
                               {list.map((list, index) => (
                                  <li key={index} className="single-list-inner style-check">
                                     <i className="fa fa-check"></i>{list}
                                  </li>
                               ))}
-                           </ul>
+                           </ul> */}
                         </div>
                      </div>
 
@@ -106,11 +106,11 @@ export default async function BlogArticle ({params}: {params: {slug: string}}){
                         <div className="row">
                            <div className="col-sm-6">
                               <h6>Related Tags :</h6>
-                              <div className="tags">
+                             {/*  <div className="tags">
                                  <a href="#">Treands, </a>
                                  <a href="#">Inttero, </a>
                                  <a href="#">Estario</a>
-                              </div>
+                              </div> */}
                            </div>
                            <div className="col-sm-6 text-sm-right">
                               <div className="blog-share">
@@ -124,8 +124,8 @@ export default async function BlogArticle ({params}: {params: {slug: string}}){
                            </div>
                         </div>
                      </div>
-                     <BlogComment />
-                     <BlogForm />
+                     {/* <BlogComment />
+                     <BlogForm /> */}
                   </div>
                </div>
                <div className="col-lg-4 col-12">
